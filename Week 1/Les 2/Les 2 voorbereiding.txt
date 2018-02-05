@@ -1,0 +1,17 @@
+--Opgave geheugenmodel volgorde--
+
+e)	Globale variabelen plaatsen.
+d)	Stack frame plaatsen.
+f)	Lokale variabelen plaatsen.
+c)	Returnwaarde kopiëren.
+a)	Lokale variabelen een waarde geven.
+b)	Stack frame verwijderen.
+
+--Opgave pijp in het geheugenmodel--
+
+-Onderdeel A-
+Een pijl verwijst van een variabele naar een andere variabele, bijvoorbeeld een array.
+De waarde uit de variabele waar de pijl naar verwijst wordt in de eerste variabele gestopt.
+
+-Onderdeel B-
+De pijl begint in het vakje waar de waarde in gestopt moet worden en wijst naar een object, stack frame, ect.
