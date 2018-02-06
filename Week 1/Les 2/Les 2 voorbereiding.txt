@@ -8,7 +8,6 @@ a)	Lokale variabelen een waarde geven.
 b)	Stack frame verwijderen.
 
 --Opgave pijp in het geheugenmodel--
-
 -Onderdeel A-
 Een pijl verwijst van een variabele naar een andere variabele, bijvoorbeeld een array.
 De waarde uit de variabele waar de pijl naar verwijst wordt in de eerste variabele gestopt.
