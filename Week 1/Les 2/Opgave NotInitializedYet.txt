@@ -1,0 +1,5 @@
+--Opgave NotInitializedYet--
+- Onderdeel A -
+
+De foutmelding is: "The local variable deLijst may ot have been initialized"
+Dit is een runtimefout.
