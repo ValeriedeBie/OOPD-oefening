@@ -1,6 +1,6 @@
 class Slider {
   float x, y, breedte, hoogte; 
-  int nPosities;
+  int nPosities, positie;
 
   Slider() {
     this.breedte = 200;
@@ -27,14 +27,18 @@ class Slider {
     rect(x + positie * blokjeBreedte, y, blokjeBreedte, hoogte);
   }
 
-  int bepaalSliderPositie() {
+  void bepaalSliderPositie() {
     float blokjeBreedte = breedte / nPosities;
     if (mouseX < x) {
-      return 0;
+      positie = 0;
     } else if (mouseX >= breedte + x) {
-      return nPosities - 1;
+      positie = nPosities - 1;
     } else {
-      return floor((mouseX  - x) / blokjeBreedte);
+      positie = floor((mouseX  - x) / blokjeBreedte);
     }
+  }
+  
+  String toString(){
+    return "De positie van de slider is: " + positie;
   }
 }

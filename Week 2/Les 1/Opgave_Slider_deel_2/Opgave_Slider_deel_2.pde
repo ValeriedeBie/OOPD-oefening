@@ -1,5 +1,4 @@
 Slider[] sliders;
-int positie;
 void setup() {
   size(300, 200);
   background(0);
@@ -11,7 +10,9 @@ void setup() {
 
 void draw() {
   for (int i = 0; i<sliders.length; i++) {
-    positie = sliders[i].bepaalSliderPositie();
+    sliders[i].bepaalSliderPositie();
     sliders[i].tekenSlider();
   }
+  
+  println(sliders);
 }
