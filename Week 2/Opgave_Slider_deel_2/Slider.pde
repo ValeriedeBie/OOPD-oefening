@@ -9,6 +9,14 @@ class Slider {
     this.y = 50;
     this.nPosities = 5;
   }
+  
+  //Slider(float breedte, float hoogte, float x, float y, int nPosities){
+  //  this.breedte = breedte;
+  //  this.hoogte = hoogte;
+  //  this.x = x;
+  //  this.y = y;
+  //  this.nPosities = nPosities;
+  //}
 
   void tekenSlider() {
     float blokjeBreedte = breedte / nPosities;
