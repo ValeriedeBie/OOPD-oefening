@@ -1,7 +1,9 @@
-Damsteen[] damstenen = new Damsteen[] { new Damsteen(30, 40, 50, 255);
-                                        new Damsteen(90, 40, 50, 255);
-                                        new Damsteen(30, 340, 50, 0);
-                                        new Damsteen(90, 340, 50, 0);}
+Damsteen eenDamsteenWit = new Damsteen(30, 40, 50, 255);
+Damsteen eenDamsteenWit1 = new Damsteen(90, 40, 50, 255);
+Damsteen eenDamsteenZwart = new Damsteen(30, 340, 50, 0);
+Damsteen eenDamsteenZwart1 = new Damsteen(90, 340, 50, 0);
+Damsteen[] damsteenInformatie = {eenDamsteenWit, eenDamsteenWit1, eenDamsteenZwart, eenDamsteenZwart1};
+
 
 void setup() {
   size(500, 500);

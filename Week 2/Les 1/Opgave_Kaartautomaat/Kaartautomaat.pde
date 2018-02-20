@@ -26,13 +26,16 @@ class Kaartautomaat {
 
   String drukKaartjeAf() {
     if (ingeworpenGeld > prijs) {
-      return "Hier is uw kaartje voor de film : " + film + " van €" + prijs;
+      return "______________________________________________________\n|Hier is uw kaartje voor de film : " + film + " van €" + prijs + 
+      "|\n|Uw wisselgeld is €" + berekenWisselgeld() + "|\n______________________________________________________";
     } else {
       return "Er is meer geld nodig bbbbbitch";
     }
   }
 
   void verhoogIngeworpenGeld(float inwerp) {
-    ingeworpenGeld += inwerp;
+    if (inwerp > 0) {
+      ingeworpenGeld += inwerp;
+    }
   }
 }
