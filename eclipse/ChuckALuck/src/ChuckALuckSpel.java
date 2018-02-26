@@ -14,28 +14,26 @@ public class ChuckALuckSpel {
 		this.inzet = inzet;
 		int komtVoor = 0;
 		for (int i = 0; i < dobbelBeker.ds.length; i++) {
-			if(dobbelBeker.ds[i].getLaatstGedobbeld() == nummer) {
+			if (dobbelBeker.ds[i].getLaatstGedobbeld() == nummer) {
 				komtVoor++;
 			}
 		}
-		switch(komtVoor) {
+		switch (komtVoor) {
 		case 0:
 			saldo = saldo - inzet;
 			break;
 		case 1:
 			break;
 		case 2:
-			saldo = saldo + (inzet*2);
+			saldo = saldo + (inzet * 2);
 			break;
 		case 3:
-			saldo = saldo + (inzet*10);
+			saldo = saldo + (inzet * 10);
 		}
 	}
 
-public String toString() {
-	
-	
-return "Ronde: " + ronde + "\nGeluksgetal: " + geluksGetal + " Saldo:" + saldo; 
-}
+	public String toString() {
+		return "Ronde: " + ronde + "\nGeluksgetal: " + geluksGetal + " Saldo:" + saldo;
+	}
 
 }

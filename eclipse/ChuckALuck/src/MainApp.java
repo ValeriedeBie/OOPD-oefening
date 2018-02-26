@@ -9,6 +9,6 @@ public class MainApp {
 		System.out.println(spel);
 		
 		spel.speelRonde(4, 10);
-		System.out.println(spel);		
+		System.out.println(spel);	
 	}
 }

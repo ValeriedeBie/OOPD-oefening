@@ -1,12 +1,31 @@
 public class Klok {
-	  private Teller minutenTeller;
-	  private Teller urenTeller;
+	  private Teller minutenTeller, urenTeller;
+
 	  
-	  public Klok(float x, float y, float breedte, float hoogte){    
-	    urenTeller = new Teller(null, 24,x,y,breedte/2,hoogte);
-	    minutenTeller = new Teller(null,60,x + breedte/2, y, breedte / 2, hoogte);
+	  public Klok(float x, float y, float breedte){    
+	    urenTeller = new Teller(24,x,y,breedte/2);
+	    minutenTeller = new Teller(60,x + breedte/2, y, breedte / 2);
 	  }
 	  
+	  
+	  
+	  public void tik(){
+	    minutenTeller.tik();
+	    if(minutenTeller.getWaarde() == 0){
+	      urenTeller.tik();
+	    }
+	  }
+	  
+	  public void setTijd(int uren, int minuten){
+	    minutenTeller.setWaarde(58);
+	    urenTeller.setWaarde(23);
+	  }
+	  
+	  public void tekenKlok(KlokApp app) {
+	    urenTeller.tekenTeller(app);
+	    minutenTeller.tekenTeller(app);
+	  }
+
 	  public float getX() {
 		  return urenTeller.getX();
 	  }
@@ -32,22 +51,16 @@ public class Klok {
 	  public float getBreedte() {
 		  return urenTeller.getBreedte();
 	  }
-	  
-	  public void tik(){
-	    minutenTeller.tik();
-	    if(minutenTeller.getWaarde() == 0){
-	      urenTeller.tik();
-	    }
+
+	  public void setHoogte(float hoogte) {
+		  urenTeller.setHoogte(hoogte);
+		  minutenTeller.setHoogte(hoogte);
 	  }
 	  
-	  public void setTijd(int uren, int minuten){
-	    minutenTeller.setWaarde(58);
-	    urenTeller.setWaarde(23);
-	  }
-	  
-	  public void tekenKlok(){
-	    urenTeller.tekenTeller();
-	    minutenTeller.tekenTeller();
+	  public void setBreedte(float breedte) {
+		  urenTeller.setBreedte(breedte/2);
+		  minutenTeller.setBreedte(breedte/2);
+		  
 	  }
 }
 

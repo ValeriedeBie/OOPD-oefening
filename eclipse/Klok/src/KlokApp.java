@@ -5,16 +5,21 @@ public class KlokApp extends PApplet {
 		PApplet.main(new String[] { "KlokApp" });
 	}
 
-	Teller eenTeller;
+	Klok deKlok;
 	
 	public void settings() {
 		size(400, 300);
 	}
 
 	public void setup() {
+		
+		deKlok = new Klok(150, 100, 200);
+		deKlok.setTijd(11,59);
+	}
+	
+	public void draw() {
 		background(255);
-		eenTeller = new Teller(this, 60, 20, 20, 100, 80);
-		eenTeller.setWaarde(59);
-		eenTeller.tekenTeller();
+		deKlok.tik();
+		deKlok.tekenKlok(this);
 	}
 }
