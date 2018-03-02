@@ -1,17 +1,17 @@
 import java.util.Random;
 
 public class TestStudieadviesApp {
-	
+
 	public static void main(String[] args) {
 		Random r = new Random();
+
 		
-		Student s1 = new Student("persoon 1");
-		for (int i = 0; i < 8; i++) {
-			s1.setCijfer(i, r.nextInt(10) + 1);
+		RandomStudentenGenerator R = new RandomStudentenGenerator();
+		R.genereerStudenten(5);
+		for (int j = 0; j < R.getStudentenLijst().length; j++) {
+			System.out.println(R.getStudentenLijst()[j]);
+			System.out.println(Studieadviseur.krijgtPositiefStudieadvies(R.getStudentenLijst()[j]));
+			System.out.println("------------------");
 		}
-		
-		System.out.println(s1);
-		System.out.println(Studieadviseur.krijgtPositiefStudieadvies(s1));
-		System.out.println("------------------");
 	}
 }
