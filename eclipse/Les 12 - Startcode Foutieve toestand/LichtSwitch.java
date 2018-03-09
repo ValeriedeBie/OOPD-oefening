@@ -12,6 +12,7 @@ public class LichtSwitch extends Switch {
 	
 	@Override
 	protected void doeKnopActie() {
+		handelInteractieAf();
 		licht.schakelLicht();
 	}
 

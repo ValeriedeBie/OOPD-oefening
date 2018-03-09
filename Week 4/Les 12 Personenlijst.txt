@@ -1,0 +1,7 @@
+LES 12 LESPROGRAMMA
+Opgave Personenlijst implementatie
+
+Opgave A
+Je kan beter Docent veranderen naar Persoon.
+Als je er een String van maakt moet je de voor- en achternaam in één variabele stoppen.
+Als je het veranderd in Persoon heb je de correcte variabeles en hoeft het niet persee een Student of Docent te worden.
