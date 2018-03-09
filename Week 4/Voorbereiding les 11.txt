@@ -1,0 +1,12 @@
+Runtime:		
+Dynamische type		
+Geheugenmodel
+Instantie
+Methode look-up
+Uitvoeren van een programma		
+			
+Compile time:
+Abstract
+Klasse
+Statische type
+Controleren van een programma
