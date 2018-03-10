@@ -1,0 +1,14 @@
+//LES 13 VOORBEREIDING
+
+Opgave het woord Interface
+1. Een manier om een zichtbaar deel van een klasse te beschrijven.
+2. Grafische gebruikersinterface, het gebruik van grafische beelden, widgets en tekst.
+3. Een stuk hardware, een methode of een standaard om apparaten op elkaar aan te sluiten.
+
+-----------------------------------------------------------------------------------------
+
+Opgave meerdere interfaces implementeren
+Je kan meerdere interfaces gebruiken want het beschrijft alleen wat een klasse doet en hoe
+deze kan worden gebruikt zonder de implementatie weer te geven. Je kan maar 1 klasse gebruiken
+want daar wordt de implementatie gedaan.
+
